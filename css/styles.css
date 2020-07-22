@@ -2047,6 +2047,10 @@ borde: ;r-left-color: #337ab7;
         z-index: 99999;
     }
 
+    .menu-color-content .main-menu-list a {
+    color:  #ffffff;
+}
+
     .main-menu-list {
         position: fixed;
         top: -600px;
@@ -2195,7 +2199,15 @@ borde: ;r-left-color: #337ab7;
         margin-right: -50%;
         transform: translate(-50%, -50%);
         background-color: #7ab80e;
+    }
 
+    .menu-color-content .main-burger:before, .menu-color-content .main-burger:after, .menu-color-content .main-burger span {
+        background-color: transparent;
+    }
+
+    .menu-color-content .main-menu-list>li:hover:not(:last-child){
+    background-color: transparent;
+    border-bottom: none;
     }
 
     .burger-menu-list {
