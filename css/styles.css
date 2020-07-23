@@ -181,6 +181,10 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
 
 .menu-color-content .main-menu-list>li:hover:not(:last-child){
     background-color: transparent;
+}
+
+.menu-color-content .main-menu a:hover {
+    padding: 0px 0px 10px 0px;
     border-bottom: 2px solid #7ab80e;
 }
 
@@ -192,7 +196,12 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
 .menu-color-content a {
     color:  #7ab80e;
 }
+
 .menu-color-content .main-menu a {
+    color:  #7ab80e;
+}
+
+.menu-color-content .sub-main-menu-list a, .menu-color-content  .main-burger a {
     color:  #333333;
 }
 
@@ -2040,7 +2049,7 @@ borde: ;r-left-color: #337ab7;
         position: absolute;
         width: 100%;
         justify-content: space-between;
-        top: 15px;
+        top: 25px;
         left: 0;
         padding: 15px 15px;
         margin: 10px 0px 0px 0px;
@@ -2053,7 +2062,7 @@ borde: ;r-left-color: #337ab7;
 
     .main-menu-list {
         position: fixed;
-        top: -600px;
+        top: -650px;
         left: 0;
         width: 100%;
         z-index: 9999;
@@ -2331,10 +2340,14 @@ borde: ;r-left-color: #337ab7;
 
 @media (max-width: 570px) {
     .main-menu {
-        margin: 25px 0px 0px 0px;
+        margin: 35px 0px 0px 0px;
     }
     .page-content {
-    margin-top: 130px;
+    margin-top: 150px;
+    }
+
+    .main-menu-list.active {
+    top: 155px;
     }
 
 }
@@ -2360,7 +2373,7 @@ borde: ;r-left-color: #337ab7;
         position: absolute;
         width: 100%;
         justify-content: space-between;
-        top: 40px;
+        top: 50px;
         left: 0;
         padding: 15px 15px;
         margin: 10px 0px 0px 0px;
